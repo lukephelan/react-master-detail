@@ -31,10 +31,17 @@
   float: left;
   width: 25%;
   overflow: scroll;
+  background-image: url('./navy_blue.png');
+  color: white;
+  margin-right: 20px;
 }
 
 .masterListTable {
   width: 100%;
+}
+
+.masterListPriceColumn {
+  text-align: right;
 }
 
 th, td {
@@ -43,6 +50,7 @@ th, td {
 
 .detailContainer {
   float: left;
-  /* width: 80%; */
+  /* background-image: url('./polaroid.png'); */
+  /* height: 100%; */
 }
 

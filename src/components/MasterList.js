@@ -1,24 +1,20 @@
 import React, { Component } from 'react';
 
 class MasterList extends Component {
-    constructor(props) {
-        super(props);
-    }
-    
     render() {
         const { data } = this.props;
         const row = data.map((data) =>
             <tr key={data.ID}>
                 <td key={data.Name}>{data.Name}</td>
-                <td key={data.Price} align="right">${Math.round(data.Price).toFixed(2)}</td>
+                <td key={data.Price} className="masterListPriceColumn">${Math.round(data.Price).toFixed(2)}</td>
             </tr>
         );
         return (
-            <table>
+            <table className="masterListTable">
                 <tbody>
                     <tr>
                         <th>Name</th>
-                        <th>Price</th>
+                        <th className="masterListPriceColumn">Price</th>
                     </tr>
                     {row}
                 </tbody>
