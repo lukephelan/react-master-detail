@@ -4,6 +4,7 @@ class MasterList extends Component {
     constructor(props) {
         super(props);
     }
+    
     render() {
         const { data } = this.props;
         const row = data.map((data) =>

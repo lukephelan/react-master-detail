@@ -29,16 +29,12 @@
 
 .masterListContainer {
   float: left;
-  /* width: 25%; */
+  width: 25%;
   overflow: scroll;
 }
 
 .masterListTable {
   width: 100%;
-}
-
-.tablePrice {
-  /* align: right; */
 }
 
 th, td {
