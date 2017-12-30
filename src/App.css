@@ -2,24 +2,25 @@
   text-align: center;
 }
 
-.App-logo {
+.Header-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
 
-.App-header {
+.Header-container {
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
 }
 
-.App-title {
+.Header-title {
   font-size: 1.5em;
 }
 
-.App-intro {
+.Header-intro {
   font-size: large;
+  margin-left: 15px;
 }
 
 @keyframes App-logo-spin {
@@ -29,11 +30,12 @@
 
 .masterListContainer {
   float: left;
-  width: 25%;
+  width: 30%;
   overflow: scroll;
   background-image: url('./navy_blue.png');
   color: white;
   margin-right: 20px;
+  padding: 5px;
 }
 
 .masterListTable {
@@ -45,7 +47,7 @@
 }
 
 th, td {
-  border: 1px solid black;
+  border-bottom: 1px solid grey;
 }
 
 .detailContainer {
