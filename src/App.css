@@ -26,3 +26,27 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.masterListContainer {
+  float: left;
+  /* width: 25%; */
+  overflow: scroll;
+}
+
+.masterListTable {
+  width: 100%;
+}
+
+.tablePrice {
+  /* align: right; */
+}
+
+th, td {
+  border: 1px solid black;
+}
+
+.detailContainer {
+  float: left;
+  /* width: 80%; */
+}
+
