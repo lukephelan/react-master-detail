@@ -1,0 +1,14 @@
+.detailContainer {
+    background-image: url('../polaroid.png');
+    min-height: 100%;
+    height: 100%;
+    margin: none;
+}
+
+.Detail-object {
+    padding-top: 10px;
+}
+  
+.Detail-null-discontinued-value {
+    display: none;
+}
