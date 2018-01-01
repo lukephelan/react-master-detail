@@ -5,17 +5,15 @@ class MasterList extends Component {
     render() {
         const { data } = this.props;
         const row = data.map((data) =>
-            <tr key={data.ID} onClick={() => { this.props.showDetail(data.ID) }}>
-                <td key={data.Name}>{data.Name}</td>
-                <td key={data.Price} className="masterListPriceColumn">${Math.round(data.Price).toFixed(2)}</td>
+            <tr key={data.Id} onClick={() => { this.props.showDetail(data) }}>
+                <td className="Masterlist-td" key={data.Id}>{data.Id}{data.CompanyName}</td>
             </tr>
         );
         return (
-            <table className="masterListTable">
+            <table>
                 <tbody>
                     <tr>
-                        <th>Name</th>
-                        <th className="masterListPriceColumn">Price</th>
+                        <th className="Masterlist-th">Customer</th>
                     </tr>
                     {row}
                 </tbody>

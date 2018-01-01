@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Moment from 'react-moment';
 import './Detail.css';
 
 class Detail extends Component {
@@ -7,13 +6,46 @@ class Detail extends Component {
         const { data } = this.props;
         return (
             <div className="Detail-object">
-                <span>Product Name: {data.Name}<br /></span>
-                <span>Product ID: {data.ID}<br /></span>
-                <span>Description: {data.Description}<br /></span>
-                <span>Price: ${data.Price}<br /></span>
-                <span>Rating: {data.Rating}<br /></span>
-                <span>Release Date: <Moment date={data.ReleaseDate} format="D/MM/YYYY" /><br /></span>
-                <span className={!data.DiscontinuedDate ? "Detail-null-discontinued-value" : ""}>Discontinued Date: <Moment date={data.DiscontinuedDate} format="D/MM/YYYY" /></span>
+                <table className="Detail-table">
+                    <tbody>
+                        <tr>
+                            <th>Company Name:</th>
+                            <td>{data.CompanyName}</td>
+                        </tr>
+                        <tr>
+                            <th>Address:</th>
+                            <td>{data.Address}</td>
+                        </tr>
+                        <tr>
+                            <th>City:</th>
+                            <td>{data.City}</td>
+                        </tr>
+                        <tr>
+                            <th>Postal Code:</th>
+                            <td>{data.PostalCode}</td>
+                        </tr>
+                        <tr>
+                            <th>Country:</th>
+                            <td>{data.Country}</td>
+                        </tr>
+                        <tr>
+                            <th>Contact:</th>
+                            <td>{data.ContactName}</td>
+                        </tr>
+                        <tr>
+                            <th>Title:</th>
+                            <td>{data.ContactTitle}</td>
+                        </tr>
+                        <tr>
+                            <th>Phone:</th>
+                            <td>{data.Phone}</td>
+                        </tr>
+                        <tr>
+                            <th>Fax:</th>
+                            <td>{data.Fax}</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         );
     }

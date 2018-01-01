@@ -7,7 +7,7 @@ class Header extends Component {
         return (
             <div className="Header-container">
                 <div className="row">
-                    <div className="col-md-8">
+                    <div className="col-md-10">
                         <h1 className="Header-title col-md-8">
                             React Master-Detail Application
                         </h1>
@@ -15,7 +15,7 @@ class Header extends Component {
                             This is a master-detail application built with React.
                         </p>
                     </div>
-                    <img src={logo} className="Header-logo col-md-4" alt="logo" />
+                    <img src={logo} className="Header-logo col-md-2" alt="logo" />
                 </div>
             </div>
         );

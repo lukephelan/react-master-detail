@@ -1,8 +1,5 @@
-.detailContainer {
-    background-image: url('../polaroid.png');
-    min-height: 100%;
+.Detail-container {
     height: 100%;
-    margin: none;
 }
 
 .Detail-object {
@@ -11,4 +8,12 @@
   
 .Detail-null-discontinued-value {
     display: none;
+}
+
+.Detail-table {
+    width: 60%;
+}
+
+.Detail-table td {
+    text-align: right;
 }

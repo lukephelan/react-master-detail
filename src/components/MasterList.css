@@ -1,4 +1,4 @@
-.masterListContainer {
+.MasterList-container {
     float: left;
     width: 30%;
     overflow: scroll;
@@ -8,10 +8,10 @@
     padding: 5px;
 }
   
-.masterListTable {
-    width: 100%;
-}
-  
-.masterListPriceColumn {
+.MasterListPriceColumn {
     text-align: right;
+}
+
+.Masterlist-th, .Masterlist-td {
+    border-bottom: 1px solid grey;
 }
