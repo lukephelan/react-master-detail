@@ -24,7 +24,7 @@ class App extends Component {
   }
   componentDidMount() {
     console.log("Component mounted");
-    axios.get(`https://northwind.servicestack.net/customers.json`)
+    axios.get(`https://cors-anywhere.herokuapp.com/https://northwind.servicestack.net/customers.json`)
       .then(function(res) {
         customers = res.data.Customers;
         this.setState({
