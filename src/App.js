@@ -11,6 +11,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      loading: true,
       customers: customers,
       selectedCustomer: customers[0]
     }
@@ -23,11 +24,11 @@ class App extends Component {
     });
   }
   componentDidMount() {
-    console.log("Component mounted");
     axios.get(`https://cors-anywhere.herokuapp.com/http://northwind.servicestack.net/customers.json`)
       .then(function(res) {
         customers = res.data.Customers;
         this.setState({
+          loading: false,
           customers: res.data.Customers,
           selectedCustomer: res.data.Customers[0]
         });
@@ -36,18 +37,25 @@ class App extends Component {
         console.log(err);
       });
   }
+  renderLoading() {
+    return <div>Loading...</div>;
+  }
   render() {
-    return (
-      <div className="App-container">
-        <Header />
-        <div className="MasterList-container">
-          <MasterList data={this.state.customers} showDetail={this.showDetail}/>
+    if (this.state.loading) {
+      return this.renderLoading();
+    } else {
+      return (
+        <div className="App-container">
+          <Header />
+          <div className="MasterList-container">
+            <MasterList data={this.state.customers} showDetail={this.showDetail} loading={this.state.loading}/>
+          </div>
+          <div className="Detail-container">
+            <Detail data={this.state.selectedCustomer}/>
+          </div>
         </div>
-        <div className="Detail-container">
-          <Detail data={this.state.selectedCustomer}/>
-        </div>
-      </div>
-    );
+      );
+    }
   }
 }
 
