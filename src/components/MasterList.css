@@ -1,13 +1,3 @@
-.MasterList-container {
-    float: left;
-    width: 30%;
-    overflow: scroll;
-    background-image: url('../navy_blue.png');
-    color: white;
-    margin-right: 20px;
-    padding: 5px;
-}
-  
 .MasterListPriceColumn {
     text-align: right;
 }

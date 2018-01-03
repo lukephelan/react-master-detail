@@ -1,3 +1,16 @@
 .App-container {
   height: 100%;
 }
+
+.MasterList-container {
+  float: left;
+  overflow: scroll;
+  background-image: url('./navy_blue.png');
+  color: white;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.Detail-container {
+  height: 100%;
+}
