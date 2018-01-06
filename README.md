@@ -2,7 +2,10 @@
 
 This is a project I created to heap me learn React. It is a read-only master-detail application using the Northwind API for data.
 
+[Hosted Version](https://react-master-detail.herokuapp.com/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
 
 ### Available Scripts
 
